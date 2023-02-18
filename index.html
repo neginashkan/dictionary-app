@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8587bf19c3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Dictionary App</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="">HOME</li>
+        <li>about us</li>
+        <li class="learn hidden">LEARN</li>
+        <li class="membership hidden">membership</li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="dictionary">
+        <h1>Find Your Words with Our Dictionary</h1>
+        <form id="dictionary-app-form">
+          <input
+            id="input"
+            class="input"
+            type="text"
+            autocomplete="off"
+            autofocus
+            placeholder="Type the word here.."
+          />
+          <input class="button" type="submit" value="Look It Up" />
+        </form>
+        <div id="error" class="error hidden">Couldn't Find The Word</div>
+        <div class="result" id="result">
+          <!-- add by javaScript -->
+        </div>
+      </div>
+      <div class="dictionary-logo">
+        <img
+          class="logo"
+          src="images/image.png"
+          alt="an animated drawing boy with book in his hands"
+        />
+      </div>
+    </div>
+    <script src="javaScript/app.js"></script>
+  </body>
+</html>
